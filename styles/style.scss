@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./main-content";
+@import "./sidebar";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  color: white;
+}
+
+.vertical-line {
+  left: 60%;
+  height: 100%;
+  position: absolute;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}

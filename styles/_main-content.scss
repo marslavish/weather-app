@@ -1,0 +1,88 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+// Switch temp box
+.temp-switch {
+  margin-top: 3rem;
+  margin-left: 7%;
+  width: 6rem;
+  height: 4rem;
+  border: 1px solid $sidebarTextColor;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.seperate-line {
+  border-left: 1px solid $sidebarTextColor;
+  height: 3rem;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.fahrenheit {
+  align-self: flex-start;
+  font-size: 1.6rem;
+}
+
+.celsius {
+  align-self: flex-end;
+  font-size: 1.6rem;
+}
+
+.deactivate {
+  opacity: 0.4;
+}
+
+// Weather info
+.weather-info {
+  position: relative;
+  left: 10%;
+  top: 56%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.weather-info__temp {
+  height: $temp;
+  font-size: $temp;
+  margin-right: 2rem;
+  font-weight: 500;
+}
+
+.weather-info .wrap-up {
+  margin-right: 2rem;
+  @include flexCenter();
+}
+
+.weather-info__location {
+  font-size: $location;
+  font-weight: 500;
+  height: $location;
+  margin-bottom: 0.5rem;
+}
+
+.weather-info__date {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.weather-main {
+  @include flexCenter();
+  img {
+    margin-bottom: -1rem;
+    height: 6.4rem;
+  }
+}
+
+.weather-info__weather {
+  font-size: 1.6rem;
+  font-weight: 300;
+}

@@ -1,0 +1,80 @@
+aside {
+  width: $sidebarWidth;
+  padding-left: $sidebarPadding;
+  padding-right: $sidebarPadding;
+  backdrop-filter: blur(20px);
+  font-size: $sidebarFontSize;
+}
+
+// * Search weather
+.search-weather {
+  margin-top: 6rem;
+  display: flex;
+}
+
+input[type="text"] {
+  outline: none;
+  height: 3rem;
+  font-size: 2rem;
+  color: $sidebarTextColor;
+  background: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  width: $sidebarWidth * 0.6;
+  border-bottom: 1px solid $sidebarTextColor;
+}
+
+::placeholder {
+  color: $sidebarTextColor;
+  font-size: $sidebarFontSize;
+  font-weight: 300;
+}
+
+.search-btn {
+  margin-left: auto;
+  cursor: pointer;
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: $sidebarTextColor;
+  @include flexCenter();
+}
+
+hr {
+  border-top: 1px solid $sidebarTextColor;
+  border-bottom: none;
+}
+
+// * Common locations
+.common-locations {
+  margin-top: $sectionMargin;
+  color: $sidebarTextColor;
+  font-weight: 300;
+  p {
+    margin-bottom: $itemMargin;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: $sectionMargin;
+    }
+  }
+}
+
+// * Weather details
+.weather-details > p {
+  margin-top: $sectionMargin;
+  margin-bottom: $sectionMargin;
+}
+
+.weather-details > div {
+  margin-bottom: $itemMargin;
+  display: flex;
+  p:last-child {
+    margin-left: auto;
+  }
+  p:first-child {
+    color: $sidebarTextColor;
+  }
+}

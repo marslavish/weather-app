@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="temp-switch" data-switch-temp="switch">
+        <p class="fahrenheit deactivate" data-switch-temp="f">℉</p>
+        <div class="seperate-line"></div>
+        <p class="celsius" data-switch-temp="c">℃</p>
+      </div>
+
+      <div class="weather-info">
+        <p class="weather-info__temp" data-weather-info="temp"></p>
+        <div class="wrap-up">
+          <p class="weather-info__location" data-weather-info="location"></p>
+          <p class="weather-info__date" data-weather-info="date"></p>
+        </div>
+        <div class="weather-main">
+          <img
+            src="http://openweathermap.org/img/wn/02d@2x.png"
+            alt="weather"
+            data-weather-icon
+          />
+          <p class="weather-info__weather" data-weather-info="weather"></p>
+        </div>
+      </div>
+    </main>
+
+    <div class="vertical-line"></div>
+
+    <aside>
+      <div class="search-weather">
+        <form action="#" autocomplete="off" class="location-form">
+          <label for="location"></label>
+          <input
+            type="text"
+            id="location"
+            placeholder="Another location"
+            data-input="location"
+          />
+        </form>
+        <div class="search-btn" data-btn="search-weather">
+          <img src="https://img.icons8.com/ios-glyphs/30/000000/search.png" />
+        </div>
+      </div>
+
+      <div class="common-locations">
+        <p data-common-locations>Birmingham</p>
+        <p data-common-locations>Manchester</p>
+        <p data-common-locations>New York</p>
+        <p data-common-locations>California</p>
+      </div>
+      <hr />
+
+      <div class="weather-details">
+        <p>Weather Details</p>
+        <div class="weather-datails__cloudy">
+          <p class="name">Cloudy</p>
+          <p class="content" data-weather-details="cloudy"></p>
+        </div>
+        <div class="weather-datails__humidity">
+          <p class="name">Humidity</p>
+          <p class="content" data-weather-details="humidity"></p>
+        </div>
+        <div class="weather-datails__visibility">
+          <p class="name">Visibility</p>
+          <p class="content" data-weather-details="visibility">10km</p>
+        </div>
+        <div class="weather-datails__wind">
+          <p class="name">Wind</p>
+          <p class="content" data-weather-details="wind"></p>
+        </div>
+      </div>
+      <hr />
+    </aside>
+  </body>
+</html>

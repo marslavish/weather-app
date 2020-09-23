@@ -10,7 +10,7 @@ const wind = $('[data-weather-details="wind"]');
 const commonLocations = $$("[data-common-locations]");
 const body = $("body");
 
-// * Get weathre data from API
+// Get weathre data from API
 const getWeatherData = async (location) => {
   const API = "176c23a5dc40cc61563c12852115b9d3";
   const response = await fetch(

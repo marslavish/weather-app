@@ -73,7 +73,7 @@ export const displayWeatherInfo = (obj) => {
   location.textContent = obj.location;
   date.textContent = `${getDateInfo().week} ${getDateInfo().date}`;
   weather.textContent = obj.weather;
-  weatherIcon.src = `http://openweathermap.org/img/wn/${obj.icon}@2x.png`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${obj.icon}@2x.png`;
 };
 
 const ContentUi = () => {

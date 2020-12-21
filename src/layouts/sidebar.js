@@ -14,7 +14,7 @@ const body = $("body");
 const getWeatherData = async (location) => {
   const API = "176c23a5dc40cc61563c12852115b9d3";
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API}`,
     { mode: "cors" }
   );
   const weatherData = await response.json();

@@ -1,7 +1,3 @@
-@import "./variables";
-@import "./main-content";
-@import "./sidebar";
-
 *,
 *::before,
 *::after {
@@ -29,3 +25,7 @@ body {
   position: absolute;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+@import "./variables";
+@import "./main-content";
+@import "./sidebar";
